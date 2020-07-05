@@ -1,0 +1,105 @@
+.section-basic-info {    
+    padding: 10rem 0;
+    background-color: $color-gray-dark-2;
+    margin-top: -13vh;  
+    position: relative; 
+    z-index: -1000;     
+
+    @include respond(big-desktop) {
+        margin-top: -15vh;
+    }   
+
+    @include respond(tab-port) {
+        padding: 16rem 0;
+        
+    }
+
+    
+}
+
+.section-highlights {
+    background-color: $color-gray-light-1;
+    padding: 5rem 0;    
+
+    @include respond(tab-port) {
+        padding-bottom: 25rem;
+    }
+}
+
+.section-includes-details {
+    background-image: linear-gradient(to right bottom, $primary-color-light, $primary-color-dark);
+    padding: 10rem 0;    
+}
+
+.includes-details {
+
+    text-align: center;
+
+    &__box {
+        padding: 3rem;
+        width: 85%;        
+        display: inline-block;
+        background-image: linear-gradient(to right bottom, $color-gray-light-2, $color-gray-dark-2);
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        transition: all .4s;       
+
+        & > a {
+            margin-bottom: 2rem;
+        }
+
+        & > .card__price-value {
+            font-weight: 400;
+            color: $primary-color;
+        }
+
+        &:hover {
+            transform: scale(1.08);
+        }
+    }
+
+    &__includes-list {
+        list-style: none;        
+    }
+
+    &__includes-list-item {
+        padding: 1.3rem;
+        font-size: 2.5rem;
+
+        @media(max-width: 1125px) {
+            font-size: 2rem;
+        }
+        
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid $primary-color-dark;
+        }
+    }
+
+    &__includes-icon {
+        color: $primary-color;
+        
+    }
+
+    
+}
+
+.section-contact {
+    padding: 10rem 0;
+    background-color: $color-gray-light-1;
+}
+
+.contact {
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($primary-color-light, 0.9)
+        , rgba($primary-color-dark, 0.9)), 
+    url(../img/tour-1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    
+    text-align: left;
+}
+    

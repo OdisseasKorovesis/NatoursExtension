@@ -1,0 +1,247 @@
+.section-tours-group {
+    background-color: $color-gray-light-1;
+    padding-top: 5rem;
+    padding-bottom: 25rem;
+    margin-top: -20vh;
+
+    &:not(:first-child) {
+        padding-top: 2rem;
+    }
+}
+
+.section-tour-explanations {    
+    padding: 35rem 0;
+    background-image: linear-gradient(to right bottom, $primary-color-light, $primary-color-dark);
+    margin-top: -20vh;    
+}
+
+.tour-explanations {
+
+    &__diff-photos {
+        position: relative;
+        text-align: center;        
+    }    
+
+    &__photo-diff {
+        width: 100%;
+        position: absolute;
+        border: 2px solid $color-white;
+        border-radius: 3px;
+        transition: all .4s;
+        filter: sepia(60%);
+
+        @media(max-width: 1500px) {
+            width: 70%;
+        }
+
+        @include respond(tab-port) {
+            position: relative;
+            display: table;
+        }
+
+        &:hover {
+            transform: scale(1.5);
+            z-index: 1000;
+            filter: sepia(0%);
+            border: 2px solid $primary-color-light;            
+        }        
+
+        &--1 {
+            top: -20rem;
+            left: -12rem;
+
+            @media(max-width: 1500px) {
+                top: -10rem;
+                left: 8rem;
+            }
+
+            @include respond(tab-land) {
+                top: -10rem;
+                left: 8rem;
+            }
+
+            @include respond(tab-port) {
+                top: auto;
+                left: auto;                
+                display: table-cell;
+            }
+        }
+
+        &--2 {
+            top: -10rem;
+            left: 1rem;
+
+            @media(max-width: 1500px) {
+                top: -1rem;
+                left: 10rem;
+            }
+
+            @include respond(tab-land) {
+                top: -1rem;
+                left: 10rem;
+            }
+
+            @include respond(tab-port) {
+                top: auto;
+                left: auto;                
+                display: table-cell;
+            }
+
+            &:hover {
+                transform: translateX(-5rem) scale(1.5);
+
+                @include respond(tab-port) {
+                    transform: translateX(0) scale(1.5);
+                }
+            }
+        }
+
+        &--3 {
+            top: 5rem;
+            left: -7rem;
+
+            @media(max-width: 1500px) {
+                top: 9rem;
+                left: 7rem;
+            }
+
+            @include respond(tab-land) {
+                top: 9rem;
+                left: 7rem;
+            }
+
+            @include respond(tab-port) {                
+                top: auto;
+                left: auto;                
+                display: table-cell;
+            }
+        }
+    }
+
+    &__diff-text {
+        position: relative;
+        color: $color-black;
+    }
+
+    &__location-photos {
+        position: relative;
+        text-align: center;
+        order: 1;
+
+        @include respond(tab-port) {
+            order: 2;
+        }
+    }
+
+    &__photo-location {        
+        width: 100%;
+        position: absolute;
+        border: 2px solid $color-white;
+        border-radius: 3px;
+        transition: all .4s;
+        filter: sepia(70%);
+        
+
+        @media(max-width: 1500px) {
+            width: 70%;
+        }
+
+        @include respond(tab-port) {
+            position: relative;
+            display: table;
+        }
+
+        &:hover {
+            transform: scale(1.5);
+            z-index: 1000;
+            filter: sepia(0%); 
+            border: 2px solid $primary-color-light;            
+        }        
+
+        &--1 {
+            top: -20rem;
+            right: -12rem;
+
+            @media(max-width: 1500px) {
+                top: -10rem;
+                right: 8rem;
+            }
+
+            @include respond(tab-land) {
+                top: -10rem;
+                right: 8rem;
+            }
+
+            @include respond(tab-port) {
+                top: auto;
+                right: auto;                
+                display: table-cell;
+            }
+        }
+
+        &--2 {
+            top: -10rem;
+            right: 1rem;
+
+            @media(max-width: 1500px) {
+                top: -1rem;
+                right: 10rem;
+            }
+
+            @include respond(tab-land) {
+                top: -1rem;
+                right: 10rem;
+            }
+
+            @include respond(tab-port) {
+                top: auto;
+                right: auto;                
+                display: table-cell;
+            }
+
+            &:hover {
+                transform: translateX(5rem) scale(1.5);
+
+                @include respond(tab-port) {
+                    transform: translateX(0) scale(1.5);
+                }
+            }
+        }
+
+        &--3 {
+            top: 5rem;
+            right: -7rem;
+
+            @media(max-width: 1500px) {
+                top: 9rem;
+                right: 7rem;
+            }
+
+            @include respond(tab-land) {
+                top: 9rem;
+                right: 7rem;
+            }
+
+            @include respond(tab-port) {                
+                top: auto;
+                right: auto;                
+                display: table-cell;
+            }
+        }
+    
+    }
+
+    &__location-text {
+        color: $color-black;
+        order: 2;
+
+        @include respond(tab-port) {
+            order: 1;
+        }
+    }
+
+    &__header {
+        border-bottom: 2px solid $color-gray-dark-2;
+    }
+
+}

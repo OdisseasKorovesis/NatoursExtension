@@ -1,0 +1,80 @@
+.storyline {
+    width: 100%;    
+    display: table;   ;
+
+    &__entry {
+        
+        display: table-row;
+
+        @include respond(tab-land) {
+            display: initial;
+        }
+    }
+
+    &__left {
+        padding-left: 5rem;
+        text-align: right;
+        display: table-cell;
+        width: 50%;       
+        vertical-align: middle;
+
+        &--center {
+            text-align: center;
+        }
+        
+        @include respond(tab-land) {
+            display: table-row;
+            text-align: center;
+        }
+    }
+
+    &__right {
+        text-align: left;
+        display: table-cell;
+        width: 50%;        
+        vertical-align: middle;
+        
+        padding-left: 3rem;
+        padding-right: 25rem;       
+
+        @include respond(tab-land) {
+            display: table-row;
+            text-align: center;
+            padding-left: 15rem;
+        }
+       
+    }
+
+    &__img {
+        display: inline-block;
+        width: 40%;
+        border-radius: 3px;
+        border: 1px solid $color-white;
+        filter: sepia(70%);
+        transition: all .3s;
+
+        &:hover {
+            border-left: 1rem solid $color-white;
+            transform: scale(1.25) translateX(-3rem);
+            z-index: 1000;
+
+            @include respond(tab-land) {
+                transform: scale(1.25) translateX(0) translateY(-3rem); 
+            }
+            
+        }        
+    }
+
+    &__text {
+        color: $color-white;
+
+        @include respond(tab-land) {
+            padding-left: 20rem;
+            padding-right: 20rem;
+            margin-bottom: 3rem;
+        }
+        
+    }
+
+    
+}
