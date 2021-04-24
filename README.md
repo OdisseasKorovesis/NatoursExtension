@@ -1,7 +1,4 @@
 # Natours Extension
 
-Natours is a fictional tour company. Its landing page was built by me following the design explained by Jonas Schmedtmann as part of his
-Advanced CSS & Sass course on Udemy. 
-
-The three additional pages (About, All-Tours & Tour) are an extension to the original website and were built and designed by me, using HTML, pure CSS along with the Sass pre-processor 
-(specifically using SCSS syntax). 
+Frontend website designed as part of the Advanced CSS & Sass course and extended beyond the initial deisgn shown in the course.
+Technologies used include just HTML and pure CSS along with the Sass pre-processero (specifically using SCSS syntax).
